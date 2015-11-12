@@ -1,0 +1,19 @@
+---
+- hosts:
+    - local
+  gather_facts: true
+
+  roles:
+    - { role: marcelocorreia.homebrew, tags: ['install','homebrew'], when: "ansible_system == 'Darwin'"}
+
+  vars:
+    homebrew_packages:
+      - name: dos2unix
+        state: present
+        upgrade_all: false
+        update_homebrew: false
+        install_options: enable-debug
+      - name: nginx
+        state: absent
+      - name: p7zip
+        state: present

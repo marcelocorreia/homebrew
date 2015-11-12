@@ -1,0 +1,10 @@
+---
+- name: Managing homebrew packages
+  homebrew:
+    state="{{ item.state }}"
+    name="{{ item.name }}"
+    upgrade_all="{{ item.upgrade_all | default(false) }}"
+    update_homebrew="{{ item.update_homebrew | default(false)}}"
+    install_options="{{ item.install_options | default('enable-debug')}}"
+  sudo: true
+  with_items: homebrew_packages

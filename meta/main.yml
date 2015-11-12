@@ -1,0 +1,17 @@
+# file: oracle-jdk/meta/main.yml
+
+galaxy_info:
+  author: Marcelo Correia
+  company: BulletProof
+  description: "Mac OS X Homebrew manager"
+  min_ansible_version: 1.4
+  license: MIT
+  platforms:
+  - name: MacOS
+    versions:
+    - all
+  categories:
+  - system
+  - development
+
+dependencies: []
