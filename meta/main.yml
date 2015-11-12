@@ -13,5 +13,6 @@ galaxy_info:
   categories:
   - system
   - development
+  - MacOS
 
 dependencies: []
