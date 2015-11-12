@@ -14,5 +14,7 @@ galaxy_info:
   - system
   - development
   - MacOS
+  - brew
+  - homebrew
 
 dependencies: []
