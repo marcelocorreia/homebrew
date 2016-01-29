@@ -7,4 +7,5 @@
     update_homebrew="{{ item.update_homebrew | default(false)}}"
     install_options="{{ item.install_options | default('enable-debug')}}"
   sudo: true
+  when: "ansible_system == 'Darwin'"
   with_items: homebrew_packages
